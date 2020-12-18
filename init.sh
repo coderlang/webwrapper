@@ -1,4 +1,4 @@
 git submodule init
 git submodule update
-git checkout master
+cd 3rd_party && git checkout master && cd ..
 node 3rd_party/script/cmd/init.js
