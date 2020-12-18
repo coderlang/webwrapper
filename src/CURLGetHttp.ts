@@ -2,7 +2,7 @@ import {Http} from "foundation";
 import {HttpBuilder} from "foundation";
 import axios from "axios";
 
-export class CURLPostHttp implements Http {
+export class CURLGetHttp implements Http {
   send(): Promise<[string, (Error | null)]> {
     return new Promise<[string, (Error|null)]>((resolve, reject) => {
       axios({
